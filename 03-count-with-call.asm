@@ -15,3 +15,5 @@ _start:
 
     xor rdi, rdi
     call tape_exit
+
+; vim: set et tw=100 ts=4 sw=4 ft=nasm:

@@ -22,3 +22,5 @@ _start:
 
 section .data
     format_string db '%ld * %ld = %ld, bitch!', 10
+
+; vim: set et tw=100 ts=4 sw=4 ft=nasm:

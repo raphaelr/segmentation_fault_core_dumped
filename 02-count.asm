@@ -27,3 +27,5 @@ iteration:
     mov rax, sys_exit
     xor rdi, rdi
     syscall
+
+; vim: set et tw=100 ts=4 sw=4 ft=nasm:

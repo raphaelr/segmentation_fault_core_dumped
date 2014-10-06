@@ -18,3 +18,5 @@ tape_putdigit:
     mov rdx, 2
     syscall
     ret
+
+; vim: set et tw=100 ts=4 sw=4 ft=nasm:
