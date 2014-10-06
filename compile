@@ -1,0 +1,17 @@
+#!/bin/sh
+if [ "$#" == "0" ]; then
+    echo Usage: $0 whatever.asm
+    exit 1
+fi
+
+while (( "$#" )); do
+    name=${1%.asm}
+    cmd="yasm -f elf64 $name.asm -o obj/$name.o && \
+        ld obj/$name.o -o bin/$name"
+    echo $cmd
+    eval $cmd
+    if (( "$?" )); then
+        exit 1
+    fi
+    shift
+done
